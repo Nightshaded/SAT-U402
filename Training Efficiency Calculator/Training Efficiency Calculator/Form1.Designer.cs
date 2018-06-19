@@ -32,10 +32,10 @@
             this.MainTitle = new System.Windows.Forms.Label();
             this.Title = new System.Windows.Forms.Label();
             this.TitleInput = new System.Windows.Forms.TextBox();
-            this.Input = new System.Windows.Forms.TextBox();
+            this.Input1 = new System.Windows.Forms.TextBox();
             this.InputTitle = new System.Windows.Forms.Label();
             this.BenchmarkTitle = new System.Windows.Forms.Label();
-            this.BenchmarkInput = new System.Windows.Forms.TextBox();
+            this.BenchmarkInput1 = new System.Windows.Forms.TextBox();
             this.BenchmarkInput2 = new System.Windows.Forms.TextBox();
             this.BenchmarkTitle2 = new System.Windows.Forms.Label();
             this.InputTitle2 = new System.Windows.Forms.Label();
@@ -80,7 +80,7 @@
             this.Title8 = new System.Windows.Forms.Label();
             this.ExerciseTitle = new System.Windows.Forms.Label();
             this.OutputTitle = new System.Windows.Forms.Label();
-            this.TitleOutput = new System.Windows.Forms.Label();
+            this.TitleOutput1 = new System.Windows.Forms.Label();
             this.TitleOutput2 = new System.Windows.Forms.Label();
             this.TitleOutput3 = new System.Windows.Forms.Label();
             this.TitleOutput4 = new System.Windows.Forms.Label();
@@ -88,7 +88,7 @@
             this.TitleOutput5 = new System.Windows.Forms.Label();
             this.TitleOutput7 = new System.Windows.Forms.Label();
             this.TitleOutput8 = new System.Windows.Forms.Label();
-            this.Output = new System.Windows.Forms.Label();
+            this.Output1 = new System.Windows.Forms.Label();
             this.Output8 = new System.Windows.Forms.Label();
             this.Output7 = new System.Windows.Forms.Label();
             this.Output6 = new System.Windows.Forms.Label();
@@ -96,10 +96,12 @@
             this.Output4 = new System.Windows.Forms.Label();
             this.Output3 = new System.Windows.Forms.Label();
             this.Output2 = new System.Windows.Forms.Label();
+            this.CalculateButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Save
             // 
+            this.Save.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Save.Location = new System.Drawing.Point(543, 1350);
             this.Save.Name = "Save";
             this.Save.Size = new System.Drawing.Size(386, 133);
@@ -134,13 +136,13 @@
             this.TitleInput.Size = new System.Drawing.Size(313, 42);
             this.TitleInput.TabIndex = 3;
             // 
-            // Input
+            // Input1
             // 
-            this.Input.Location = new System.Drawing.Point(136, 261);
-            this.Input.Multiline = true;
-            this.Input.Name = "Input";
-            this.Input.Size = new System.Drawing.Size(126, 42);
-            this.Input.TabIndex = 4;
+            this.Input1.Location = new System.Drawing.Point(136, 261);
+            this.Input1.Multiline = true;
+            this.Input1.Name = "Input1";
+            this.Input1.Size = new System.Drawing.Size(126, 42);
+            this.Input1.TabIndex = 4;
             // 
             // InputTitle
             // 
@@ -162,13 +164,13 @@
             this.BenchmarkTitle.TabIndex = 6;
             this.BenchmarkTitle.Text = "Benchmark";
             // 
-            // BenchmarkInput
+            // BenchmarkInput1
             // 
-            this.BenchmarkInput.Location = new System.Drawing.Point(243, 341);
-            this.BenchmarkInput.Multiline = true;
-            this.BenchmarkInput.Name = "BenchmarkInput";
-            this.BenchmarkInput.Size = new System.Drawing.Size(126, 42);
-            this.BenchmarkInput.TabIndex = 7;
+            this.BenchmarkInput1.Location = new System.Drawing.Point(243, 341);
+            this.BenchmarkInput1.Multiline = true;
+            this.BenchmarkInput1.Name = "BenchmarkInput1";
+            this.BenchmarkInput1.Size = new System.Drawing.Size(126, 42);
+            this.BenchmarkInput1.TabIndex = 7;
             // 
             // BenchmarkInput2
             // 
@@ -566,15 +568,15 @@
             this.OutputTitle.TabIndex = 51;
             this.OutputTitle.Text = "Output";
             // 
-            // TitleOutput
+            // TitleOutput1
             // 
-            this.TitleOutput.AutoSize = true;
-            this.TitleOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TitleOutput.Location = new System.Drawing.Point(1001, 239);
-            this.TitleOutput.Name = "TitleOutput";
-            this.TitleOutput.Size = new System.Drawing.Size(82, 31);
-            this.TitleOutput.TabIndex = 52;
-            this.TitleOutput.Text = "Blank";
+            this.TitleOutput1.AutoSize = true;
+            this.TitleOutput1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TitleOutput1.Location = new System.Drawing.Point(1001, 239);
+            this.TitleOutput1.Name = "TitleOutput1";
+            this.TitleOutput1.Size = new System.Drawing.Size(82, 31);
+            this.TitleOutput1.TabIndex = 52;
+            this.TitleOutput1.Text = "Blank";
             // 
             // TitleOutput2
             // 
@@ -646,15 +648,15 @@
             this.TitleOutput8.TabIndex = 62;
             this.TitleOutput8.Text = "Blank";
             // 
-            // Output
+            // Output1
             // 
-            this.Output.AutoSize = true;
-            this.Output.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Output.Location = new System.Drawing.Point(1313, 239);
-            this.Output.Name = "Output";
-            this.Output.Size = new System.Drawing.Size(82, 31);
-            this.Output.TabIndex = 63;
-            this.Output.Text = "Blank";
+            this.Output1.AutoSize = true;
+            this.Output1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Output1.Location = new System.Drawing.Point(1313, 239);
+            this.Output1.Name = "Output1";
+            this.Output1.Size = new System.Drawing.Size(82, 31);
+            this.Output1.TabIndex = 63;
+            this.Output1.Text = "Blank";
             // 
             // Output8
             // 
@@ -726,11 +728,23 @@
             this.Output2.TabIndex = 70;
             this.Output2.Text = "Blank";
             // 
+            // CalculateButton
+            // 
+            this.CalculateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CalculateButton.Location = new System.Drawing.Point(543, 1198);
+            this.CalculateButton.Name = "CalculateButton";
+            this.CalculateButton.Size = new System.Drawing.Size(386, 132);
+            this.CalculateButton.TabIndex = 71;
+            this.CalculateButton.Text = "Calculate";
+            this.CalculateButton.UseVisualStyleBackColor = true;
+            this.CalculateButton.Click += new System.EventHandler(this.CalculateButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1497, 1610);
+            this.ClientSize = new System.Drawing.Size(1557, 1605);
+            this.Controls.Add(this.CalculateButton);
             this.Controls.Add(this.Output2);
             this.Controls.Add(this.Output3);
             this.Controls.Add(this.Output4);
@@ -738,7 +752,7 @@
             this.Controls.Add(this.Output6);
             this.Controls.Add(this.Output7);
             this.Controls.Add(this.Output8);
-            this.Controls.Add(this.Output);
+            this.Controls.Add(this.Output1);
             this.Controls.Add(this.TitleOutput8);
             this.Controls.Add(this.TitleOutput7);
             this.Controls.Add(this.TitleOutput5);
@@ -746,7 +760,7 @@
             this.Controls.Add(this.TitleOutput4);
             this.Controls.Add(this.TitleOutput3);
             this.Controls.Add(this.TitleOutput2);
-            this.Controls.Add(this.TitleOutput);
+            this.Controls.Add(this.TitleOutput1);
             this.Controls.Add(this.OutputTitle);
             this.Controls.Add(this.ExerciseTitle);
             this.Controls.Add(this.BenchmarkInput8);
@@ -791,16 +805,17 @@
             this.Controls.Add(this.Input2);
             this.Controls.Add(this.TitleInput2);
             this.Controls.Add(this.Title2);
-            this.Controls.Add(this.BenchmarkInput);
+            this.Controls.Add(this.BenchmarkInput1);
             this.Controls.Add(this.BenchmarkTitle);
             this.Controls.Add(this.InputTitle);
-            this.Controls.Add(this.Input);
+            this.Controls.Add(this.Input1);
             this.Controls.Add(this.TitleInput);
             this.Controls.Add(this.Title);
             this.Controls.Add(this.MainTitle);
             this.Controls.Add(this.Save);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -812,10 +827,10 @@
         private System.Windows.Forms.Label MainTitle;
         private System.Windows.Forms.Label Title;
         private System.Windows.Forms.TextBox TitleInput;
-        private System.Windows.Forms.TextBox Input;
+        private System.Windows.Forms.TextBox Input1;
         private System.Windows.Forms.Label InputTitle;
         private System.Windows.Forms.Label BenchmarkTitle;
-        private System.Windows.Forms.TextBox BenchmarkInput;
+        private System.Windows.Forms.TextBox BenchmarkInput1;
         private System.Windows.Forms.TextBox BenchmarkInput2;
         private System.Windows.Forms.Label BenchmarkTitle2;
         private System.Windows.Forms.Label InputTitle2;
@@ -860,7 +875,7 @@
         private System.Windows.Forms.Label Title8;
         private System.Windows.Forms.Label ExerciseTitle;
         private System.Windows.Forms.Label OutputTitle;
-        private System.Windows.Forms.Label TitleOutput;
+        private System.Windows.Forms.Label TitleOutput1;
         private System.Windows.Forms.Label TitleOutput2;
         private System.Windows.Forms.Label TitleOutput3;
         private System.Windows.Forms.Label TitleOutput4;
@@ -868,7 +883,7 @@
         private System.Windows.Forms.Label TitleOutput5;
         private System.Windows.Forms.Label TitleOutput7;
         private System.Windows.Forms.Label TitleOutput8;
-        private System.Windows.Forms.Label Output;
+        private System.Windows.Forms.Label Output1;
         private System.Windows.Forms.Label Output8;
         private System.Windows.Forms.Label Output7;
         private System.Windows.Forms.Label Output6;
@@ -876,6 +891,7 @@
         private System.Windows.Forms.Label Output4;
         private System.Windows.Forms.Label Output3;
         private System.Windows.Forms.Label Output2;
+        private System.Windows.Forms.Button CalculateButton;
     }
 }
 

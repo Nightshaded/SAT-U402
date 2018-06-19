@@ -1,0 +1,10 @@
+C:\Users\jorda\Google Drive\School\IT\SAT\Training Efficiency Calculator\Training Efficiency Calculator\obj\Debug\Training Efficiency Calculator.csprojResolveAssemblyReference.cache
+C:\Users\jorda\Google Drive\School\IT\SAT\Training Efficiency Calculator\Training Efficiency Calculator\obj\Debug\Training_Efficiency_Calculator.Form1.resources
+C:\Users\jorda\Google Drive\School\IT\SAT\Training Efficiency Calculator\Training Efficiency Calculator\obj\Debug\Training_Efficiency_Calculator.Properties.Resources.resources
+C:\Users\jorda\Google Drive\School\IT\SAT\Training Efficiency Calculator\Training Efficiency Calculator\obj\Debug\Training Efficiency Calculator.csproj.GenerateResource.cache
+C:\Users\jorda\Google Drive\School\IT\SAT\Training Efficiency Calculator\Training Efficiency Calculator\obj\Debug\Training Efficiency Calculator.csproj.CoreCompileInputs.cache
+C:\Users\jorda\Google Drive\School\IT\SAT\Training Efficiency Calculator\Training Efficiency Calculator\bin\Debug\Training Efficiency Calculator.exe.config
+C:\Users\jorda\Google Drive\School\IT\SAT\Training Efficiency Calculator\Training Efficiency Calculator\bin\Debug\Training Efficiency Calculator.exe
+C:\Users\jorda\Google Drive\School\IT\SAT\Training Efficiency Calculator\Training Efficiency Calculator\bin\Debug\Training Efficiency Calculator.pdb
+C:\Users\jorda\Google Drive\School\IT\SAT\Training Efficiency Calculator\Training Efficiency Calculator\obj\Debug\Training Efficiency Calculator.exe
+C:\Users\jorda\Google Drive\School\IT\SAT\Training Efficiency Calculator\Training Efficiency Calculator\obj\Debug\Training Efficiency Calculator.pdb
