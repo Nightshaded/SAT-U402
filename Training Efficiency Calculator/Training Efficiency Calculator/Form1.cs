@@ -28,21 +28,29 @@ namespace Training_Efficiency_Calculator
         }
         private void CalculateButton_Click(object sender, EventArgs e)
         {
+            
             List<TextBox> InputList = new List<TextBox>();
-            for (int i = 1; i < 9; i++)
-            {
-                InputList.Add((TextBox)Controls.Find("Input" + i, true)[0]);
-            }
+
+
+           for (int i = 1; i < 9; i++)
+           {
+               InputList.Add((TextBox)Controls.Find("Input" + i, true)[0]);
+           }
+           
             List<TextBox> BenchmarkList = new List<TextBox>();
+
             for (int k = 1; k < 9; k++)
             {
                 BenchmarkList.Add((TextBox)Controls.Find("BenchmarkInput" + k, true)[0]);
             }
+            
             List<double> OutputList = new List<double>();
             for(int l = 0; l < 9; l++)
             {
-                OutputList.Add(Calculate(Convert.ToDouble(BenchmarkList[l]), Convert.ToDouble(InputList[l])));
+                OutputList.Add(Calculate(Convert.ToDouble(BenchmarkList[1+l]), Convert.ToDouble(InputList[1+l])));
             }
+
+            
             Output1.Text = Convert.ToString(OutputList[0]);
             Output2.Text = Convert.ToString(OutputList[1]);
             Output3.Text = Convert.ToString(OutputList[2]);
@@ -51,6 +59,7 @@ namespace Training_Efficiency_Calculator
             Output6.Text = Convert.ToString(OutputList[5]);
             Output7.Text = Convert.ToString(OutputList[6]);
             Output8.Text = Convert.ToString(OutputList[7]);
+            
         }
     }
 }
