@@ -31,7 +31,7 @@
             this.Save = new System.Windows.Forms.Button();
             this.MainTitle = new System.Windows.Forms.Label();
             this.Title = new System.Windows.Forms.Label();
-            this.TitleInput = new System.Windows.Forms.TextBox();
+            this.TitleInput1 = new System.Windows.Forms.TextBox();
             this.Input1 = new System.Windows.Forms.TextBox();
             this.InputTitle = new System.Windows.Forms.Label();
             this.BenchmarkTitle = new System.Windows.Forms.Label();
@@ -128,13 +128,13 @@
             this.Title.TabIndex = 2;
             this.Title.Text = "Title";
             // 
-            // TitleInput
+            // TitleInput1
             // 
-            this.TitleInput.Location = new System.Drawing.Point(124, 176);
-            this.TitleInput.Multiline = true;
-            this.TitleInput.Name = "TitleInput";
-            this.TitleInput.Size = new System.Drawing.Size(313, 42);
-            this.TitleInput.TabIndex = 3;
+            this.TitleInput1.Location = new System.Drawing.Point(124, 176);
+            this.TitleInput1.Multiline = true;
+            this.TitleInput1.Name = "TitleInput1";
+            this.TitleInput1.Size = new System.Drawing.Size(313, 42);
+            this.TitleInput1.TabIndex = 3;
             // 
             // Input1
             // 
@@ -809,7 +809,7 @@
             this.Controls.Add(this.BenchmarkTitle);
             this.Controls.Add(this.InputTitle);
             this.Controls.Add(this.Input1);
-            this.Controls.Add(this.TitleInput);
+            this.Controls.Add(this.TitleInput1);
             this.Controls.Add(this.Title);
             this.Controls.Add(this.MainTitle);
             this.Controls.Add(this.Save);
@@ -826,7 +826,7 @@
         private System.Windows.Forms.Button Save;
         private System.Windows.Forms.Label MainTitle;
         private System.Windows.Forms.Label Title;
-        private System.Windows.Forms.TextBox TitleInput;
+        private System.Windows.Forms.TextBox TitleInput1;
         private System.Windows.Forms.TextBox Input1;
         private System.Windows.Forms.Label InputTitle;
         private System.Windows.Forms.Label BenchmarkTitle;
