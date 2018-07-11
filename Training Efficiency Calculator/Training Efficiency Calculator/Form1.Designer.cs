@@ -97,6 +97,8 @@
             this.Output3 = new System.Windows.Forms.Label();
             this.Output2 = new System.Windows.Forms.Label();
             this.CalculateButton = new System.Windows.Forms.Button();
+            this.TextFileInput = new System.Windows.Forms.TextBox();
+            this.TextFileName = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Save
@@ -108,6 +110,7 @@
             this.Save.TabIndex = 0;
             this.Save.Text = "Save";
             this.Save.UseVisualStyleBackColor = true;
+            this.Save.Click += new System.EventHandler(this.Save_Click);
             // 
             // MainTitle
             // 
@@ -739,11 +742,31 @@
             this.CalculateButton.UseVisualStyleBackColor = true;
             this.CalculateButton.Click += new System.EventHandler(this.CalculateButton_Click);
             // 
+            // TextFileInput
+            // 
+            this.TextFileInput.Location = new System.Drawing.Point(684, 1137);
+            this.TextFileInput.Name = "TextFileInput";
+            this.TextFileInput.Size = new System.Drawing.Size(245, 31);
+            this.TextFileInput.TabIndex = 72;
+            // 
+            // TextFileName
+            // 
+            this.TextFileName.AutoSize = true;
+            this.TextFileName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextFileName.Location = new System.Drawing.Point(537, 1137);
+            this.TextFileName.Name = "TextFileName";
+            this.TextFileName.Size = new System.Drawing.Size(86, 31);
+            this.TextFileName.TabIndex = 73;
+            this.TextFileName.Text = "Name";
+            // 
             // Form1
             // 
+            this.AcceptButton = this.CalculateButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1557, 1605);
+            this.Controls.Add(this.TextFileName);
+            this.Controls.Add(this.TextFileInput);
             this.Controls.Add(this.CalculateButton);
             this.Controls.Add(this.Output2);
             this.Controls.Add(this.Output3);
@@ -892,6 +915,8 @@
         private System.Windows.Forms.Label Output3;
         private System.Windows.Forms.Label Output2;
         private System.Windows.Forms.Button CalculateButton;
+        private System.Windows.Forms.TextBox TextFileInput;
+        private System.Windows.Forms.Label TextFileName;
     }
 }
 
