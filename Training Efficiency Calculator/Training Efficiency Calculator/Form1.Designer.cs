@@ -99,6 +99,7 @@
             this.CalculateButton = new System.Windows.Forms.Button();
             this.TextFileInput = new System.Windows.Forms.TextBox();
             this.TextFileName = new System.Windows.Forms.Label();
+            this.TextFileLocation = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Save
@@ -759,12 +760,23 @@
             this.TextFileName.TabIndex = 73;
             this.TextFileName.Text = "Name";
             // 
+            // TextFileLocation
+            // 
+            this.TextFileLocation.AutoSize = true;
+            this.TextFileLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextFileLocation.Location = new System.Drawing.Point(401, 1508);
+            this.TextFileLocation.Name = "TextFileLocation";
+            this.TextFileLocation.Size = new System.Drawing.Size(712, 33);
+            this.TextFileLocation.TabIndex = 74;
+            this.TextFileLocation.Text = "The Text File is saved in your \"My Documents\" Folder";
+            // 
             // Form1
             // 
             this.AcceptButton = this.CalculateButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1557, 1605);
+            this.Controls.Add(this.TextFileLocation);
             this.Controls.Add(this.TextFileName);
             this.Controls.Add(this.TextFileInput);
             this.Controls.Add(this.CalculateButton);
@@ -917,6 +929,7 @@
         private System.Windows.Forms.Button CalculateButton;
         private System.Windows.Forms.TextBox TextFileInput;
         private System.Windows.Forms.Label TextFileName;
+        private System.Windows.Forms.Label TextFileLocation;
     }
 }
 

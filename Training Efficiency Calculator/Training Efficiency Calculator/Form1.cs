@@ -16,7 +16,7 @@ namespace Training_Efficiency_Calculator
         public Form1()
         {
             InitializeComponent();
-            SetClientSizeCore(740,800);
+            SetClientSizeCore(740,820);
         }
         public double Calculate(double Benchmark, double Input)
         {
@@ -37,6 +37,7 @@ namespace Training_Efficiency_Calculator
             Benchmarks.Clear();
             Titles.Clear();
             Outputs.Clear();
+            Titles.Add("Titles");
             if (Input1.Text != "" && BenchmarkInput1.Text != "" && TitleInput1.Text != "")
             {
                 Output1.Text = Convert.ToString(Math.Round(Calculate(Convert.ToDouble(BenchmarkInput1.Text), Convert.ToDouble(Input1.Text)), 2) + "%");
@@ -138,27 +139,30 @@ namespace Training_Efficiency_Calculator
 
         private void Save_Click(object sender, EventArgs e)
         {
-            /*string MyDocPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            using (StreamWriter outputFile = new StreamWriter(Path.Combine(MyDocPath, TextFileInput.Text)))
+            string mydocpath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            using (StreamWriter outputFile = new StreamWriter(Path.Combine(mydocpath, TextFileInput.Text + ".txt")))
             {
-                foreach (int line in Inputs)
-                    outputFile.WriteLine(line);
+                foreach (string item in Titles)
+                {
+                    outputFile.WriteLine(item);
+                }
+                outputFile.WriteLine("Inputs");
+                foreach (int item2 in Inputs)
+                {
+                    outputFile.WriteLine(item2);
+                }
+                outputFile.WriteLine("Benchmarks");
+                foreach (int item3 in Benchmarks)
+                {
+                    outputFile.WriteLine(item3);
+                }
+                outputFile.WriteLine("Outputs");
+                foreach (string item4 in Outputs)
+                {
+                    outputFile.WriteLine(item4);
+                }
             }
-            //System.IO.File.WriteAllLines(MyDocPath, Inputs.Select(x => x.ToString()).ToArray());  
-            */
-            // Create a string array with the lines of text
-            string[] Titles2 = {Titles[0], Titles[1],Titles[3] };
-
-            // Set a variable to the My Documents path.
-            string mydocpath =
-                Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-
-            // Write the string array to a new file named "WriteLines.txt".
-            using (StreamWriter outputFile = new StreamWriter(Path.Combine(mydocpath, "WriteLines.txt")))
-            {
-                foreach (string line in Titles2)
-                    outputFile.WriteLine(line);
-            }
+            TextFileInput.Text = "";
         }
     }
 }
