@@ -20,8 +20,11 @@ namespace Training_Efficiency_Calculator
         }
         public double Calculate(double Benchmark, double Input)
         {
+            // creates a method to calculate
             double Output = Input / Benchmark * 100;
+            // finds the percentage 
             return Output;
+            // returns the percent
         }
         
         private void Form1_Load(object sender, EventArgs e)
@@ -31,24 +34,33 @@ namespace Training_Efficiency_Calculator
         List<int> Benchmarks = new List<int>();
         List<string> Titles = new List<string>();
         List<string> Outputs = new List<string>();
+        // creates the lists
         private void CalculateButton_Click(object sender, EventArgs e)
         {
             Inputs.Clear();
             Benchmarks.Clear();
             Titles.Clear();
-            Outputs.Clear();
+            Outputs.Clear(); 
+            // clears all the lists 
             Titles.Add("Titles");
             if (Input1.Text != "" && BenchmarkInput1.Text != "" && TitleInput1.Text != "")
             {
                 Output1.Text = Convert.ToString(Math.Round(Calculate(Convert.ToDouble(BenchmarkInput1.Text), Convert.ToDouble(Input1.Text)), 2) + "%");
+                // calculates the output efficency and changes the label Output1
                 TitleOutput1.Text = TitleInput1.Text;
+                // transfers the title input to the label title output
                 Inputs.Add(Convert.ToInt32(Input1.Text));
+                // adds the Input to a list
                 Benchmarks.Add(Convert.ToInt32(BenchmarkInput1.Text));
+                // adds the Benchmark to a list
                 Titles.Add(TitleInput1.Text);
+                // adds the Title to the list
                 Outputs.Add(Output1.Text);
+                // adds the output to the list
                 Input1.Text = "";
                 BenchmarkInput1.Text = "";
                 TitleInput1.Text = "";
+                // clears all the textbox inputs
             }
             if (Input2.Text != "" && BenchmarkInput2.Text != "" && TitleInput2.Text != "")
             {
@@ -140,13 +152,18 @@ namespace Training_Efficiency_Calculator
         private void Save_Click(object sender, EventArgs e)
         {
             string mydocpath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            // finds the unique pathway for any computer to the Documents folder
             using (StreamWriter outputFile = new StreamWriter(Path.Combine(mydocpath, TextFileInput.Text + ".txt")))
+            // uses steamwriter to create a file in the Documents folder and names it to the user's input
             {
                 foreach (string item in Titles)
+                // for each item in the list it will run a loop until it reaches the end of the list
                 {
                     outputFile.WriteLine(item);
+                    // prints the the list item into the text document
                 }
                 outputFile.WriteLine("Inputs");
+                // prints out the Title of the list 
                 foreach (int item2 in Inputs)
                 {
                     outputFile.WriteLine(item2);
@@ -163,6 +180,7 @@ namespace Training_Efficiency_Calculator
                 }
             }
             TextFileInput.Text = "";
+            // clears the text file input name
         }
     }
 }
